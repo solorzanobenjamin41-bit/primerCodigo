@@ -12,7 +12,7 @@ Este repositorio contiene un proyecto web con HTML, CSS, JavaScript e imágenes.
 - `images/` → Carpeta con imágenes del proyecto
 
 ## Autor
-👤 [Tu nombre o usuario de GitHub]()
+👤 [Tu nombre o usuario de GitHub](https://github.com/toji2433-code/La-mera-verdura-de-la-sopa.git)
 
 ## Estado del proyecto
 🌱 Rama de desarrollo (`dev`) activa.  
