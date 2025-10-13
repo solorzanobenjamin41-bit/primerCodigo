@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Servicios</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="header">
+    <img class="bg" src="images/bg.png" alt="Fondo decorativo" />
+    <div class="menu container">
+      <a href="index.html" class="logo">Logo</a>
+
+      <input type="checkbox" id="menu-toggle" />
+      <label for="menu-toggle" class="menu-label">
+        <img src="images/menu.png" class="menu-icono" alt="Abrir menú" />
+      </label>
+
+      <nav class="navbar">
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="servicios.html" class="active">Servicios</a></li>
+          <li><a href="productos.html">Productos</a></li>
+          <li><a href="contactos.html">Contactos</a></li>
+        </ul>
+      </nav>
+
+      <div class="cart-wrap">
+        <!-- mismo panel carrito que en index -->
+        <ul>
+          <li class="submenu">
+            <button id="btn-carrito" class="carrito-toggle" aria-expanded="false" aria-controls="carrito" title="Carrito">
+              <img src="images/car.svg" id="img-carrito" alt="Carrito" />
+              <span id="cart-count" class="cart-count">0</span>
+            </button>
+            <div id="carrito" class="carrito-panel" role="dialog" aria-hidden="true">
+              <div class="carrito-header">
+                <strong>Tu carrito</strong>
+                <button id="cerrar-carrito" class="cerrar" aria-label="Cerrar carrito">✕</button>
+              </div>
+              <table id="tabla-carrito">
+                <thead><tr><th>Imagen</th><th>Nombre</th><th>Precio</th><th></th></tr></thead>
+                <tbody></tbody>
+              </table>
+              <div class="carrito-footer">
+                <div class="total">Total: <span id="total-carrito">c$0.00</span></div>
+                <div class="acciones">
+                  <button id="vaciar-carrito" class="btn-3">Vaciar carrito</button>
+                  <a href="#" class="btn-2">Pagar</a>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="header-content container">
+      <div class="header-txt">
+        <h1>Nuestros Servicios</h1>
+        <p>Descripción breve de los servicios: catering, eventos, pedidos a domicilio, menús corporativos.</p>
+      </div>
+      <div class="header-img">
+        <img src="images/servicios.png" alt="Servicios" />
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="servicios-list">
+      <h2>Servicios disponibles</h2>
+      <div class="box-container">
+        <div class="box">
+          <h3>Catering para eventos</h3>
+          <p>Menús personalizados para bodas, cumpleaños y eventos corporativos.</p>
+        </div>
+        <div class="box">
+          <h3>Pedidos a domicilio</h3>
+          <p>Entrega rápida y embalaje seguro para llevar tus platillos favoritos a casa.</p>
+        </div>
+        <div class="box">
+          <h3>Menús corporativos</h3>
+          <p>Planes semanales para oficinas y empresas.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="scrips.js"></script>
+</body>
+</html>
