@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contactos</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="header">
+    <img class="bg" src="images/bg.png" alt="Fondo decorativo" />
+    <div class="menu container">
+      <a href="index.html" class="logo">Logo</a>
+
+      <input type="checkbox" id="menu-toggle" />
+      <label for="menu-toggle" class="menu-label">
+        <img src="images/menu.png" class="menu-icono" alt="Abrir menú" />
+      </label>
+
+      <nav class="navbar">
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="servicios.html">Servicios</a></li>
+          <li><a href="productos.html">Productos</a></li>
+          <li><a href="contactos.html" class="active">Contactos</a></li>
+        </ul>
+      </nav>
+
+      <div class="cart-wrap">
+        <ul>
+          <li class="submenu">
+            <button id="btn-carrito" class="carrito-toggle" aria-expanded="false" aria-controls="carrito" title="Carrito">
+              <img src="images/car.svg" id="img-carrito" alt="Carrito" />
+              <span id="cart-count" class="cart-count">0</span>
+            </button>
+            <div id="carrito" class="carrito-panel" role="dialog" aria-hidden="true">
+              <div class="carrito-header">
+                <strong>Tu carrito</strong>
+                <button id="cerrar-carrito" class="cerrar" aria-label="Cerrar carrito">✕</button>
+              </div>
+              <table id="tabla-carrito">
+                <thead><tr><th>Imagen</th><th>Nombre</th><th>Precio</th><th></th></tr></thead>
+                <tbody></tbody>
+              </table>
+              <div class="carrito-footer">
+                <div class="total">Total: <span id="total-carrito">c$0.00</span></div>
+                <div class="acciones">
+                  <button id="vaciar-carrito" class="btn-3">Vaciar carrito</button>
+                  <a href="#" class="btn-2">Pagar</a>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="header-content container">
+      <div class="header-txt">
+        <h1>Contacto</h1>
+        <p>Escríbenos para pedidos, sugerencias o cotizaciones.</p>
+      </div>
+      <div class="header-img">
+        <img src="images/contact.png" alt="Contacto" />
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="contact-form">
+      <h2>Envíanos un mensaje</h2>
+      <form id="contacto-form">
+        <label for="nombre">Nombre</label>
+        <input id="nombre" name="nombre" type="text" required />
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" required />
+        <label for="mensaje">Mensaje</label>
+        <textarea id="mensaje" name="mensaje" rows="6" required></textarea>
+        <button type="submit" class="btn-1">Enviar</button>
+      </form>
+    </section>
+  </main>
+
+  <script src="scrips.js"></script>
+</body>
+</html>
